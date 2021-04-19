@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./img/iconos/Repalanca_Icono_2.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <aside class="panelAdmin">
+
+        <div class="logo">
+            <img src="/img/Repalanca_Logo_2.svg" alt="">
+        </div><br>
+
+        <div class="user">
+            <div class="media">
+                <img src="./img/iconos/Icon_awesome-user-circle.png" class="align-self-center mr-3" alt="..." width="32px" height="32px">
+                <div class="media-body">
+                  <span class="datosProveedorUsuario">Cerveceria Antares</span>
+                  <span class="mailProveedorUsuario">tienda@antares.com</span>
+                </div>
+              </div>
+        </div>
+        <hr>
+
+        <div class="categoriasPanelAdmin">
+
+            <div class="accordion" id="accordionPanelAdmin">
+                <div class="card">
+                    <div class="card-header" id="categoriaMieShop">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
+                            <div class="media">
+                                <img src="./img/iconos/Icon_feather-shopping-bag.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Mi e-shop</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="categoriaMiFacturacion">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
+                            <div class="media">
+                                <img src="./img/iconos/iconoDocumento.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Mi facturación</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="categoriaVentas">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="media">
+                            <img src="./img/iconos/iconoEstadistica.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                              <span class="tituloCategoriaPanelAdmin">Ventas</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="categoriaVentas" data-parent="#accordionPanelAdmin">
+                    <div class="card-body">
+                        <span class="subcategoriaPanelAdmin"><a href="#">Más vendidos</a></span>
+                    </div>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="categoriaVentas" data-parent="#accordionPanelAdmin">
+                    <div class="card-body">
+                        <span class="subcategoriaPanelAdmin"><a href="#">Más buscados</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="categoriaListaDeProductos">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <div class="media">
+                                <img src="./img/iconos/Icon_feather-shopping-cart.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Lista de productos</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="categoriaListaDeProductos" data-parent="#accordionPanelAdmin">
+                      <div class="card-body">
+                         <span class="subcategoriaPanelAdmin"><a href="#">Agregar productos</a></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="datosYsesion">
+            <div class="accordion" id="accordionDatosYsesion">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
+                        <div class="media">
+                            <img src="./img/iconos/Icon_feather-credit-card.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                                <span class="tituloCategoriaPanelAdmin">Mis datos</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse">
+                        <div class="media">
+                            <img src="./img/iconos/Icon_feather-log-in.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                                <span class="tituloCategoriaPanelAdmin">Cerrar sesión</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="panelAdmin footerAdmin">
+            <p class="copyright">© RePalanca 2021. Todos los derechos reservados. Conoce nuestra Política de privacidad.</p>
+        </div>
+        
+    </aside>
+
+    <div class="container" id="navPrincipal">
+        <nav class="navDashboardPrincipal">
+            <div class="buscadorNav">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2" size="1">
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="basic-addon2"><img src="/img/iconos/search.svg" alt=""></span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <div class="notificacionYagregarProductosNav">
+                            <a href="#"><img src="./img/iconos/bell.svg" alt=""></a>
+                            <button type="button" class="btn btn-danger">+ Agregar producto</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="principal">
+        <div class="container">
+                    <section class="tituloCrud">
+                        <label class="tituloPrincipalCRUD">Productos</label>
+                        <button type="button" class="btn btn-outline-danger btn-sm">+ AGREGAR PRODUCTO</button>
+                    </section>
+        
+                    <section class="crud">
+                        <div class="filtroProductosCRUD">
+                            <div class="row">
+                                <div class="col-8">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Todos <span class="cantidadProductosTituloCRUD">(145)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Publicados <span class="cantidadProductosTituloCRUD">(80)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pausados <span class="cantidadProductosTituloCRUD">(8)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Pendientes <span class="cantidadProductosTituloCRUD">(7)</span></a>
+                                        </li>
+                                      </ul>
+                                </div>
+                
+                                <div class="col-4">
+                                        <form class="form-inline">
+                                            <select class="custom-select">
+                                                <option placeholder="Seleccione la opción" selected></option>
+                                                <option value="1">Cerveza</option>
+                                                <option value="2">Vinos</option>
+                                                <option value="3">Espumantes</option>
+                                                <option value="4">Otros</option>
+                                              </select>
+                                          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="buttonSearchOptions">Aplicar</button>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="listaProductosCRUD">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col" class="tableTitle">ID</th>
+                                <th scope="col" class="tableTitle">NOMBRE DEL PRODUCTO <i><img src="./img/iconos/grupo_180.png" alt=""></i></th>
+                                <th scope="col" class="tableTitle">FECHA <i><img src="./img/iconos/grupo_180.png" alt=""></i></th>
+                                <th scope="col" class="tableTitle">STOCK<i><img src=".img/iconos/grupo_180.png" alt=""></i></th>
+                                <th scope="col" class="tableTitle">STATUS <i><img src="./img/iconos/grupo_180.png" alt=""></i></th>
+                                <th scope="col" class="tableTitle">ACCIONES</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><img src="./img/dummy-data/birra_antares/antares_bareley-wine.png" alt="" width="35px" height="64px"></th>
+                                <td>#423</td>
+                                <td>Cerveza artesanal Antares rubia</td>
+                                <td>28/03/2020</td>
+                                <td>45</td>
+                                <td>Publicado</td>
+                                <td>
+                                    <ul class="conjuntoIconosCRUD">
+                                        <li class="iconosCRUD"><img src="./img/iconos/icon_edit.png" alt=""></li>
+                                        <li class="iconosCRUD"><img src="./img/iconos/icon_delete.png" alt=""></li>
+                                        <li class="iconosCRUD"><img src="./img/iconos/icon_upload.png" alt=""></li>
+                                        <li class="iconosCRUD"><img src="./img/iconos/icon_download.png" alt=""></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="./img/dummy-data/birra_antares/antares_bareley-wine.png" alt="" width="35px" height="64px"></th>
+                                <td>#424</td>
+                                <td>Cerveza artesanal Antares negra</td>
+                                <td>28/03/2020</td>
+                                <td>50</td>
+                                <td>Pendiente</td>
+                                <td>
+                                    <ul>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_edit.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_delete.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_upload.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_download.png" alt=""></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><img src="./img/dummy-data/bodega_aranjuez/3988_71.png" alt="" width="35px" height="64px"></th>
+                                <td>#425</td>
+                                <td>Vino blanco</td>
+                                <td>29/03/2020</td>
+                                <td>30</td>
+                                <td>Pausado</td>
+                                <td>
+                                    <ul>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_edit.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_delete.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_upload.png" alt=""></li>
+                                        <li style="display:inline;"><img src="./img/iconos/icon_download.png" alt=""></li>
+                                    </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </section>
+                    <section class="paginacion">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end pagination-sm" id="grupoLiPaginacion">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </section>
+                </div>
+        </div>
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</html>

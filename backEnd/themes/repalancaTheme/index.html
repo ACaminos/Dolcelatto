@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconos/Repalanca_Icono_2.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <title>¡Bienvenidos a RePalanca!</title>
+</head>
+<body>
+  <header class="Desktop">
+    <div class="Cabecera">
+       <div class="container" id="primeraLineaHeader">
+          <div class="row text-center">    
+            <div class="col-sm-4 order-1 order-sm-1">
+              <a href="index.html"><img class="repalancaLogo" src="./img/iconos/Repalanca.png" alt="logo-repalanca" srcset=""></a> 
+            </div>
+            <div class="col-sm-5 order-1 order-sm-1">
+                <div class="search"> <input type="text" class="search-input" placeholder="Buscá por Producto, marca, categoria..." name=""> <a href="#" class="search-icon"> <img class="LupaBuscador" src="./img/iconos/Icon feather-search.png" alt=""></a> </div>
+            </div>
+            <div class="col-sm-3 order-1 order-sm-1">
+              <button class="btn" type="button" style="outline: 0;" data-toggle="modalSesionUsuario" data-target="#staticBackdrop">
+                <img class="imagenes" src="./img/iconos/Icon feather-user.png" alt="" srcset="">
+              </button>
+              <button class="btn" type="button" aria-expanded="false">
+                <img class="imagenes" src="./img/iconos/Icon feather-heart.png" alt="" srcset="" title="Mis favoritos">
+              </button>
+              <button class="btn" type="button" aria-expanded="false" data-toggle="modal" data-target="#ModalCarrito">
+                <img class="imagenes" src="./img/iconos/Icon feather-shopping-cart.png" alt="" srcset="" title="Mi carrito">
+              </button>
+            </div>
+          </div>
+        </div>
+       <div class="EntreLinea"></div>
+       <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Vinos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cervezas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Espirituosas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Maltas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+      </ul>
+      </div>
+</header>
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="position: absolute;"> <!-- MODAL CARRITO -->
+        <div class="modal" tabindex="-1" id="ModalCarrito">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Mi pedido</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">cerrar &times;</span>
+                </button>
+              </div>
+              <div class="modal-body"> <!-- Primer Producto de Modal -->
+              <div class="media">
+                <img src="./img adobe XD/NoPath_Birra.png" class="align-self-center mr-3" alt="..." width="64px" height="64px">
+                <div class="media-body">
+                  <h5 class="mt-0">Lorem ipsum</h5>
+                  <p>Cras sit amet nibh libero, in gravida nulla.</p>
+                  <p class="mb-0">Bs. 400</p>
+                </div>
+                <button class="Close" style="border: none; background-color:white ;"><span aria-hidden="true">&times;</span></button>
+              </div>
+              </div>
+              <div class="modal-body"> <!-- Segundo Producto de Modal -->
+              <div class="media">
+                <img src="./img adobe XD/NoPath_-Vino.png" class="align-self-center mr-3" alt="..." width="64px" height="64px">
+                <div class="media-body">
+                  <h5 class="mt-0">Lorem ipsum</h5>
+                  <p>Cras sit amet nibh libero, in gravida nulla.</p>
+                  <p class="mb-0">Bs. 400</p>
+                </div>
+                <button class="Close" style="border: none; background-color:white ;"><span aria-hidden="true">&times;</span></button>
+              </div>
+              </div>
+              <div class="modal-body">
+                <p>Subtotal</p>
+              </div>
+              <div class="modal-footer">
+              <div class="container-fluid">
+                <button type="button" class="btn btn-outline-danger btn-block"> <a href="./carrito.html">Ver carrito</a></button><br>
+              </div>
+              <div class="container-fluid">
+                <button type="button" class="btn btn-danger btn-block">Finalizar compra</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para inicio de sesion (En desarrollo) -->
+     <!-- <div class="modal fade" id="modalSesionUsuario" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="./img/iconos/usuario.png" alt="">
+              <h5 class="modal-title" id="staticBackdropLabel">Inicio sesión</h5>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Usuario</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer" id="ModalInicioSesion">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-info">Iniciar sesión</button>
+            </div>
+            <div class="modal-footer">
+              <a href="#"><p>Olvidé mi contraseña</p></a>
+              <p>Soy nuevo  </p><a href="#">quiero registrarme</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <header class="Mobile">  <!------------------------ HEADER MOBILE --------------------------->
+      <nav class="navbar navbar-expand-lg" id="NavMobile" style="background-color: #1C1F33;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand">
+          <img class="repalancaLogo" src="./img/iconos/Repalanca.png" alt="" srcset="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Vinos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cervezas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Espirituosas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Maltas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+        </div>
+      </nav>
+    </header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Sliders/1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Sliders/2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Sliders/3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+      </div>
+
+      <section class="Destacados">
+        <legend><h5 class="destacado"><span>Destacados <a href="#"> Ver todos</a></span> </h5></legend>
+        <br><br><div class="container">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_Birra.png" class="zoom">
+                      <div class="titulo"><p class="Titulo">Antares</p></div>
+                        <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_-Vino.png" class="zoom">
+                      <div class="titulo"><p class="Titulo">Aranjuez</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPathRoja_-_copia.png" class="zoom"> <!--Predeterminado en 30%-->
+                      <div class="titulo"><p class="Titulo">Fullers</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_VinoBlanco-_copia_2.png" class="zoom">
+                      <div class="titulo"><p class="Titulo">Antares</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><br>
+    <section class="nuestrasTiendas">
+      <legend><h5 class="NuestrasTiendas"><span class="tiendas">Nuestras tiendas</span> </h5></legend><br>
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel__contenedor">
+            <button aria-label="Anterior"class="carousel__anterior">
+              <img src="./img/flechaLadoIzq.svg" alt="">
+            </button>
+            <div class="carousel__lista">
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Carinoso.jpeg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Charlone.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Falernia.png" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Jesus.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Lacruz.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Mendez.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Nahuel.png" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Santamaria.png" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Stella.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/six.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/Antares.jpg" alt="" width="150px" height="150px">
+              </div>
+              <div class="carousel__elemento">
+                <img src="./img/Nuestras tiendas/factory.jpg" alt="" width="150px" height="150px">
+              </div>
+            </div>
+            <button aria-label="Siguiente"class="carousel__siguiente">
+              <img src="./img/flechaLadoDer.svg" alt="">
+            </button>
+          </div>
+          <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+      </div>
+    </section>
+    <section class="masVendidos">
+      <legend><h5 class="destacado"><span>Mas vendidos <a href="#"> Ver todos</a></span> </h5></legend>
+        <br><br><div class="container">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                       <img class="zoom" src="./img adobe XD/NoPath_-Vino.png">
+                      <div class="titulo"><p class="Titulo">Antares</p></div>
+                        <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_VinoBlanco-_copia_2.png">
+                      <div class="titulo"><p class="Titulo">Aranjuez</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_-Vino.png">
+                      <div class="titulo"><p class="Titulo">Fullers</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="GaleriaImagenes">
+                    <img class="zoom" src="./img adobe XD/NoPath_VinoBlanco-_copia_2.png">
+                      <div class="titulo"><p class="Titulo">Baltika</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><br>
+    <section class="tePuedeInteresar">
+      <h5 class="destacado"><span class="interesar">Te puede interesar <a href="#">Ver todos</a></span></h5> <br>
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-md-5" id="cuadro1tePuedeInteresar">
+            <div class="media" id="cuadro1">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Cervezas</h5>
+                <p>Temporada de descuentos</p>
+                <button type="button" class="btn btn-danger">VER MÁS</button>
+              </div>
+              <img src="./img/Nuestras tiendas/AndesLatas.png" class="ml-3" alt="..." width="128px" height="128px">
+            </div>
+          </div>
+          <div class="col-md-5" id="cuadro2tePuedeInteresar">
+            <div class="media" id="cuadro2">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Espumantes</h5>
+                <p>Disfrutá de estas fiestas</p>
+                <button type="button" class="btn btn-danger">VER MÁS</button>
+              </div>
+              <img src="./img/Nuestras tiendas/champagne.jpg" class="ml-3" alt="..." width="128px" height="128px">
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="Descubre">
+      <legend><h5 class="destacado"><span>Descubre <a href="#"> Ver todos</a></span> </h5></legend>
+      <br><br><div class="container">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"> <!-- Primera fila -->
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPathRoja_-_copia.png">
+                    <div class="titulo"><p class="Titulo">Antares</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPath_Birra.png">
+                    <div class="titulo"><p class="Titulo">Aranjuez</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPathRoja_-_copia.png">
+                    <div class="titulo"><p class="Titulo">Fullers</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPath_VinoBlanco-_copia_2.png">
+                    <div class="titulo"><p class="Titulo">Baltika</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+          </div> <br>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"> <!-- Segunda fila -->
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPath_-Vino.png">
+                    <div class="titulo"><p class="Titulo">Samuel Smith</p></div>
+                      <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                      <div class="precio"><p class="Precio">Bs. 800,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPathRoja_-_copia.png">
+                    <div class="titulo"><p class="Titulo">Casa real</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 1400,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPath_Birra.png">
+                    <div class="titulo"><p class="Titulo">Smirnoff</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <div class="GaleriaImagenes">
+                  <img class="zoom" src="./img adobe XD/NoPath1.png">
+                    <div class="titulo"><p class="Titulo">Grants</p></div>
+                    <div class="descripcion"><p class="Descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    <div class="precio"><p class="Precio">Bs. 400,00</p></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br>
+    <section class="Servicios">
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel__contenedor">
+            <!--<button aria-label="Anterior"class="carousel__anterior">
+              <img src="./img/flechaLadoIzq.svg" alt="">
+            </button> -->
+            <div class="carousel__listaSERVICIO">
+              <div class="carousel__elementoSERVICIO">
+                  <div class="card mb-3" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="./img/iconos/ServicioDedicado.png" alt="Servicio dedicado" style="margin-left: 25%; margin-top: 50%;">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title"> <b>Servicio dedicado</b></h5>
+                          <p class="card-text" id="descripcionServicios" style="font-size: 10pt;">Consulte a nuestros especialistas para obtener ayuda con su pedido.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel__elementoSERVICIO">
+                  <div class="card mb-3" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="./img/iconos/EnvioPuerta.png" alt="Envios" style="margin-left: 25%; margin-top: 50%;">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Enviamos a tu puerta</b></h5>
+                          <p class="card-text" id="descripcionServicios" style="font-size: 10pt;">Actualmente todo el pais cuenta con envios hasta su puerta</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel__elementoSERVICIO">
+                  <div class="card mb-3" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="./img/iconos/Reembolso.png" alt="Reembolso" style="margin-left: 25%; margin-top: 50%;">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Reembolsos</b></h5>
+                          <p class="card-text" id="descripcionServicios" style="font-size: 10pt;">Respaldamos nuestros productos y servicios ya que queremos que se sientan satisfechos con los mismos</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+           <!-- <button aria-label="Siguiente"class="carousel__siguiente">
+              <img src="./img/flechaLadoDer.svg" alt="">
+            </button> -->
+          </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+      <div class="suscripcion"> <!-- Footer primer nivel -->
+        <div class="container">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <form class="d-flex">
+                      <input id="buscador" class="form-control me-2" type="search" placeholder="¡Suscribite y accedé a todas las novedades!" size="50" style="margin-top: 15px;">
+                      <button id="botonDanger" class="btn btn-danger" type="submit" style="margin-top: 15px">Suscribirse</button>
+                    </form>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="navbar-text" id="GrupoRedes">
+                      <ul class="list-group list-group-horizontal" style="margin-left: 20%;">
+                        <li class="list-group-item"><img src="./img/facebook.svg" alt="" width="16px" height="16px"></li> 
+                        <li class="list-group-item"><img src="./img/instagram.svg" alt="" width="16px" height="16px"></li> 
+                        <li class="list-group-item"><img src="./img/twitter.svg" alt="" width="16px" height="16px"></li> 
+                        <li class="list-group-item"><img src="./img/youtube.svg" alt="" width="23px" height="23px"></li> 
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div><br>
+      <div class="informacion"> <!-- Footer segundo nivel -->
+        <div class="container">
+          <table id="contact-detail" class="tutorial-table" cellspacing="0" width="100%">
+            <thead>
+                    <tr>
+                            
+                            <th class="priority-4" width="10%">Mas información<div class="subrayado"></div></th>
+                            <th class="priority-3" width="15%">Categorias<div class="subrayado2"></div></th>
+                            <th class="priority-5" width="15%">Marcas<div class="subrayado3"></div></th>
+                            <th class="priority-1" width="15%">Contacto<div class="subrayado4"></div></th>                          
+                    </tr>
+            </thead>
+            
+            <tbody>
+                    <tr>
+                            <td class="priority-4">Proceso de compra</td>
+                            <td class="priority-3">Vinos</td>
+                            <td class="priority-5">Antares</td>
+                            <td class="priority-1">Ventas: 5555 555 5555</td>
+                    </tr>
+
+                    <tr>
+                            <td class="priority-4">Términos y condiciones</td>
+                            <td class="priority-3">Cervezas</td>
+                            <td class="priority-5">Aranjuez</td>
+                            <td class="priority-1">Reclamos: 55 555 5555</td>
+                    </tr>
+                    <tr>
+                            <td class="priority-4">Privacidad</td>
+                            <td class="priority-3">Espirituosa</td>
+                            <td class="priority-5">Fuller's</td>
+                            <td class="priority-1">ventas@repalanca.com</td>
+              </tr>
+            </tbody>
+    </table>
+        </div>
+
+      </div><br>
+      <div class="derechos"><br> <!-- Footer tercer nivel -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="derechosReservados">© RePalanca 2020 . Todos los derechos reservados. <a class="politica" href="#"> Conoce nuestra Política de privacidad</a>.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./img/compraSegura.svg" width="32px" height="32px"> <span class="compraSegura"> COMPRA SEGURA</span><./img>
+              <img class="tarjetas" src="./img/visa.svg" alt="" width="32px" height="32px">
+              <img class="tarjetas" src="./img/mastercard.svg" alt="" width="32px" height="32px">
+              <img class="tarjetas" src="./img/american-express.svg" alt="" width="32px" height="32px">
+              <img class="tarjetas" src="./img/diners.png" alt="" width="32px" height="32px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+  $('.carousel').carousel({
+interval: 2000})
+</script> <!-- Script para intervalo del carousel -->
+<script>
+$(document).ready(function(){
+    $('.zoom').hover(function() {
+        $(this).addClass('transition');
+    }, function() {
+        $(this).removeClass('transition');
+    });
+});
+</script>  <!-- Script efecto zoom en los productos index.php e index.html -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>

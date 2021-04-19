@@ -1,0 +1,272 @@
+/*---------------------------- INICIO Aside dashboard ---------------------------- */
+aside.panelAdmin{
+    float: left;
+    position: fixed;
+    height: 100%;
+    width: 19%;
+    background-color: #1C1F33;
+}
+.footerAdmin{
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.copyright{
+    color: #fff;
+    text-align: left;
+   font-size: 13px;
+   color: #707070;
+}
+aside.panelAdmin div.user div.media img{
+    transform: translateX(5px);
+}
+span.tituloCategoriaPanelAdmin{
+    color: #ffff;
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+span.tituloCategoriaPanelAdmin:hover{
+    text-decoration: none;
+}
+span.subcategoriaPanelAdmin a{
+    color: #707070;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: 50px;
+    text-decoration: none;
+}
+#buttonEshop, #buttonFacturacion, #buttonVentas,#buttonListadoProductos, #buttonMisDatos, #buttonSesion{
+    text-decoration: none;
+}
+span.datosProveedorUsuario{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.5em;
+    font-weight: 800;
+}
+span.mailProveedorUsuario{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #707070;
+    transform: translateY(-10px);
+}
+aside.panelAdmin div.logo img{
+    width: 60%;
+    margin: 10px 0px 0px 30px;
+}
+aside.panelAdmin div.user{
+    margin: 0px 0px 0px 30px;
+}
+aside.panelAdmin div.user div.media div.media-body span.datosProveedorUsuario{
+    color: white;
+    font-size: 10pt;
+}
+aside.panelAdmin div.categoriasPanelAdmin #accordionPanelAdmin div.card{
+    background-color: #1C1F33;
+}
+aside.panelAdmin div.datosYsesion #accordionDatosYsesion div.card{
+    background-color: #1C1F33;
+}
+p.politicaPrivacidad a, p.derechosReservados{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 500;
+}
+footer.panelAdmin span.copyright{
+    color: white;
+    font-size: 0.6em;
+}
+
+/*---------------------------- FIN Aside dashboard ---------------------------- */
+
+
+
+/*---------------------------- INICIO Principal ---------------------------- */
+
+main.principal{
+    float: right;
+    width: 80%;
+}
+#navPrincipal{
+    float: right;
+    width: 80%;
+}
+main.principal nav.navDashboardPrincipal div.buscadorNav{
+    float: left;
+}
+main.principal nav.navDashboardPrincipal div.notificacionYagregarProductosNav{
+    float: right;
+}
+nav.navDashboardPrincipal{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+div.notificacionYagregarProductosNav a img{
+    margin-right: 20px;
+}
+section.crud{
+    margin-bottom: 10px;
+    width: 87%;
+}
+section.tituloCrud{
+    margin: 20px 0px 10px 0px;
+    position: static;
+}
+button#buttonSearchOptions{
+    margin-left: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+li.iconosCRUD{
+    display: inline;
+}
+ul#grupoLiPaginacion a{
+    margin: 0px 2px 0px 2px;
+    border: none;
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+}
+ul#grupoLiPaginacion a:hover{
+    background-color: #9698A4;
+    font-weight: 600;
+}
+section.crud div.filtroProductosCRUD ul.nav li.nav-item a.nav-link{
+    color: #1C1F33;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    transform: translateX(-12px);
+}
+section.crud div.filtroProductosCRUD ul.nav li.nav-item a.nav-link:hover{
+    color: red;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    text-decoration-line: underline;
+}
+main.principal div.container section.tituloCrud label.tituloPrincipalCRUD{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+p.tituloPublicar{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+table.table{
+    width: 80%;
+}
+main.principal section.listaProductosCRUD table.table thead tr th.tableTitle{
+    font-family: 'Montserrat';
+    font-size: 0.6em;
+    color: #707070;
+}
+section.listaProductosCRUD table.table tbody tr td{
+    transform: translateY(20px);
+}
+section.paginacion{
+    width: 80%;
+}
+input{
+    border-radius: 5px;
+}
+
+input.nombreCorto{
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+input.nombreLargo{
+    margin: 5px 0px 10px 0px;
+    width: 100%;
+}
+p.enunciadoImagen{
+    font-size: 0.6em;
+    color: #707070;
+    margin-top: 10px;
+}
+p.enunciadoImagen span{
+    font-weight: 800;    
+}
+div.arrastrarImagen{
+    margin-top: 20px;
+    border-style: dashed;
+    border-color: gray;
+    padding-bottom: 10px;
+    border-radius: 5%;
+}
+div.arrastrarImagen img{
+    transform: translate(140px, 20px);
+    margin-bottom: 25px;
+}
+div.arrastrarImagen p.primerParrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transform: translateX(80px);
+}
+div.arrastrarImagen p.segundoParrafo{
+    transform: translate(140px,-15px);
+}
+button#buscarEnElOrdernador{
+    margin-left: 18%;
+    transform: translateY(-12px);
+}
+input.maridajeInput, input.elaboracionInput, input.cosechaInput, input.stockInput{
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+::placeholder{
+    font-family: 'Montserrat';
+    font-size: 0.7em;
+}
+#textarea{
+    resize: none;
+    width: 100%;
+}
+select {
+    background-image: url(/img/iconos/icono_select.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    }
+select::-ms-expand {
+    display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/
+    }
+select.presentacion{
+    margin: 15px 0px 15px 0px;
+    width: 100%;
+    }
+select.categoria, select.subCategoria, select.presentacion{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+select.categoria option, select.subCategoria option, select.presentacion option{
+    transform: translateX(15px);
+}
+div.inputs div#rowInputs div.col input{
+    margin: 5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+div.inputs div#rowInputs div.col button{
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif
+}
+/*---------------------------- FIN Principal ---------------------------- */
+
+/*---------------------------- INICIO NAV ---------------------------- */
+
+#agregarProducto{
+    font-family: 'Montserrat', sans-serif;
+}
+#basic-addon2{
+    background-color: white;
+}
+
+/*---------------------------- FIN NAV ---------------------------- */

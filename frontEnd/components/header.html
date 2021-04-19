@@ -1,0 +1,233 @@
+<header class="Desktop">
+    <div class="Cabecera">
+      <div class="container" id="primeraLineaHeader">
+        <div class="row">
+          <div class="col-sm-4 order-1 order-sm-1">
+            <a href="./index.html"><img class="repalancaLogo img-fluid" src="./img/iconos/Repalanca.svg"
+                alt="logo-repalanca"></a>
+          </div>
+          <div class="col-sm-4 order-1 order-sm-1">
+            <div class="search">
+              <input type="text" class="search-input" placeholder="Buscá por Producto, marca, categoria..." name="">
+              <div class="LineaBuscador"></div>
+              <div class="lupa">
+                <a href="#" class="search-icon">
+                  <img class="LupaBuscador" src="./img/iconos/Icon_feather-search.png" alt="icono-lupa">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 order-1 order-sm-1 d-flex text-end justify-content-end align-items-center log-div">
+            <a href="#">
+              <img class="imagenes" src="./img/iconos/Icon_feather-user.png" alt="icono-usuario">
+            </a>
+            <span class="registro-login">
+              <div class="d-inline-flex reg"><a class="nav-link registrate" href="./registroUsuario.html">Registrate</a></div>
+              <span>/</span>
+              <div class="d-inline-flex reg"><a class="nav-link iniciar-sesion" href="./IniciarSesion.html">Iniciar Sesión</a></div>
+            </span>
+            <button class="btn" type="button" aria-expanded="false">
+              <img class="imagenes" src="./img/iconos/Icon_feather-heart.svg" alt="icono-favoritos"
+                title="Mis favoritos">
+            </button>
+            <button class="btn btnCarBuy" type="button" aria-expanded="false" data-toggle="modal" data-target="#ModalCarrito" onclick="w3_open()">
+              <span class="productosCount">0</span>
+              <img class="imagenes ultimo-icono" src="./img/iconos/Icon_feather-shopping-cart2.svg" alt="icono-carrito"
+                title="Mi carrito">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="EntreLinea"></div>
+      <div id="navCategoriasHeader">
+        <ul class="nav container justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link d-block active" href="#">VINOS</a>
+            <div class="subMenu"></div>       
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block" href="#">CERVEZAS</a>
+            <div class="subMenu"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block" href="#">ESPIRITUOSAS</a>
+            <div class="subMenu"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block" href="#">MALTAS</a>
+            <div class="subMenu"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block" href="#">BLOG</a>
+            <div class="subMenu"></div>
+          </li>
+        </ul>   
+      </div>
+    </div>
+  </header>
+  <!-- SideNav carrito de compras -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
+      <div>
+      <span class="headerMipedido">Mi pedido</span>
+      <button onclick="w3_close()" class="w3-button" id="botonCerrarSideNav"><span class="descripcionBotonCerrar">Cerrar </span> &times;</button>
+      </div>
+      <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-hover-none">
+      <div class="media"> 
+        <img src=".//Img_adobe_XD/NoPath_Birra.png" width="64px" height="64px" class="align-self-center mr-1" alt="producto">
+        <div class="media-body">
+          <h5 class="mt-0">Cerveza rubia Baltika</h5>
+          <p class="mb-0">1x <span class="precioProductoSideNavCarrito">BS. 135,00</span></p>
+        </div>
+        <button class="botonCancelar"><img src="./img/iconos/cruzCarrito.png" alt=""></button>
+      </div>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-hover-none">
+      <div class="media"> 
+        <img src=".//Img_adobe_XD/NoPath.png" width="64px" height="64px" class="align-self-center mr-1" alt="producto">
+        <div class="media-body">
+          <h5 class="mt-0">Cerveza negra Antares</h5>
+          <p class="mb-0">1x <span class="precioProductoSideNavCarrito">BS. 135,00</span></p>
+        </div>
+        <button class="botonCancelar"><img src="./img/iconos/cruzCarrito.png" alt=""></button>
+      </div>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-border-bottom w3-hover-none">
+      <div class="media"> 
+        <img src=".//Img_adobe_XD/NoPathRoja_-_copia.png" width="64px" height="64px" class="align-self-center mr-1" alt="producto">
+        <div class="media-body">
+          <h5 class="mt-0">Cerveza roja Antares</h5>
+          <p class="mb-0">1x <span class="precioProductoSideNavCarrito">BS. 135,00</span></p>
+        </div>
+        <button class="botonCancelar"><img src="./img/iconos/cruzCarrito.png" alt=""></button>
+      </div>
+      </a>
+      
+      <div class="userActions">
+      <footer class="footerSideNavCarritoDeCompras">
+        <div class="headerDeFooterSideNav">
+          <div class="subtotalSideNav">
+            <span class="palabraSubtotal">Subtotal</span>
+            <span class="precioSubtotal">$5.150,00</span>
+          </div>
+          <button type="button" class="btn btn-outline-primary btn-lg btn-block">VER CARRITO</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block">FINALIZAR COMPRA</button>
+        </div>
+      </footer>
+      </div>
+
+  </div>
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>  
+  <!-- SideNav carrito de compras -->
+  <header class="Mobile sticky-top">
+    <!------------------------ HEADER MOBILE --------------------------->
+
+        <!---------- Sidenav---------->
+            <div id="mySidenav" class="sidenav">            
+              <div class="bodySidenav">
+                <div id="headerSidenav">
+                    <p class="tituloSidenav">Bienvenido</p>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+                </div>
+                <div class="btnMenuMobile">
+                  <a class="tituloSideNav" href="./index.html">INICIO</a>
+                </div>
+                <div class="btnMenuMobile">
+                  <a class="tituloSideNav" href="#">CATEGORIAS</a>
+                </div>
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Vinos (8)
+                        </button>
+                      </h2>
+                    </div>              
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <a href="#">Rosé (1)</a>
+                        <a href="#">Blancos (1)</a>
+                        <a href="#">Tintos (6)</a>
+                      </div>
+                    </div>
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Cervezas (6)
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <a href="#">Stout (4)</a>
+                        <a href="#">Lager (1)</a>
+                        <a href="#">Alé (1)</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button id="marcas" class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          MARCAS
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <a href="#">La Concepción (5)</a>
+                        <a href="#">Aranjuez (2)</a>
+                        <a href="#">Birra Baltika (2)</a>
+                        <a href="#">Fullers (2)</a>
+                        <a href="#">Samuel Smith (1)</a>
+                        <a href="#">De Molen (1)</a>
+                        <a href="#">Kohlberg (1)</a>
+                      </div>
+                    </div>                   
+                  </div>
+                </div>
+                <div class="ingresoUsuarioSideNav">
+                  <div class="actionsUsersHeader">
+                    <img src="./img/iconos/Icon feather-log-in.png" alt="ingresar">
+                    <a class="ingresoYayuda" href="./IniciarSesion.html">INGRESAR</a>
+                  </div>
+                  <div class="actionsUsersHeader">
+                    <img src="./img/iconos/Icon feather-help-circle.png" alt="ayuda">
+                    <a class="ingresoYayuda" href="#">AYUDA</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!---------- Sidenav---------->
+
+            <div class="container containerHeaderMobile">
+              <div class="row">
+                <div class="col-2">
+                  <span class="btnMenu" onclick="openNav()"><img src="./img/iconos/Icon-feather-menu.png" alt=""></span>
+                </div>
+                <div class="col-8 d-flex justify-content-center align-items-center">
+                  <img class="repalancaLogoMobile" src="./img/iconos/Repalanca_mobile.svg" alt="Repalanca">
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center" >
+                  <a href="#">
+                    <img class="imagenes imagenesResponsive" src="./img/iconos/Icon_feather-user.png" alt="icono-usuario">
+                  </a>
+                  <a href="#">
+                    <img src="./img/iconos/Icon_feather-heart.svg" alt="icono-favoritos">
+                  </a>
+                  <a href="#" class="btnCarBuy" onclick="w3_open()">
+                    <span class="productosCount">0</span>
+                    <img src="./img/iconos/Icon_feather-shopping-cart2.svg" alt="icono-carrito">
+                  </a>
+                </div>
+              </div>
+              <div class="search"> 
+                <input type="text" class="search-input" placeholder="Buscá por Producto, marca, categoria..." name=""> 
+                <a href="#" class="search-icon">  
+                  <img class="LupaBuscador" src="./img/iconos/Icon_feather-search.png"alt="">
+                </a> 
+              </div>
+            </div>
+
+
+  </header>

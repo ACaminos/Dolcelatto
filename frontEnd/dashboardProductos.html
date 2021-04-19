@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Dashboard productos</title>
+</head>
+<body>
+    <aside class="panelAdmin">
+
+        <div class="logo">
+            <img src="./img/Repalanca_Logo_2.svg" alt="">
+        </div><br>
+
+        <div class="user">
+            <div class="media">
+                <img src="./img/iconos/Icon_awesome-user-circle.png" class="align-self-center mr-3" alt="..." width="32px" height="32px">
+                <div class="media-body">
+                  <span class="datosProveedorUsuario">Cerveceria Antares</span>
+                  <span class="mailProveedorUsuario">tienda@antares.com</span>
+                </div>
+              </div>
+        </div>
+        <hr>
+
+        <div class="categoriasPanelAdmin">
+
+            <div class="accordion" id="accordionPanelAdmin">
+                <div class="card">
+                    <div class="card-header" id="categoriaMieShop">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" id="buttonEshop">
+                            <div class="media">
+                                <img src="./img/iconos/Icon_feather-shopping-bag.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Mi e-shop</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="categoriaMiFacturacion">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" id="buttonFacturacion">
+                            <div class="media">
+                                <img src="./img/iconos/iconoDocumento.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Mi facturación</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="categoriaVentas">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="buttonVentas">
+                        <div class="media">
+                            <img src="./img/iconos/iconoEstadistica.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                              <span class="tituloCategoriaPanelAdmin">Ventas</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="categoriaVentas" data-parent="#accordionPanelAdmin">
+                    <div class="card-body">
+                        <span class="subcategoriaPanelAdmin"><a href="#">Más vendidos</a></span>
+                    </div>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="categoriaVentas" data-parent="#accordionPanelAdmin">
+                    <div class="card-body">
+                        <span class="subcategoriaPanelAdmin"><a href="#">Más buscados</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="categoriaListaDeProductos">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="buttonListadoProductos">
+                            <div class="media">
+                                <img src="./img/iconos/Icon_feather-shopping-cart.png" class="align-self-center mr-3" alt="...">
+                                <div class="media-body">
+                                    <span class="tituloCategoriaPanelAdmin">Lista de productos</span>
+                                </div>
+                            </div>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="categoriaListaDeProductos" data-parent="#accordionPanelAdmin">
+                      <div class="card-body">
+                         <span class="subcategoriaPanelAdmin"><a href="#">Agregar productos</a></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="datosYsesion">
+            <div class="accordion" id="accordionDatosYsesion">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" id="buttonMisDatos">
+                        <div class="media">
+                            <img src="./img/iconos/Icon_feather-credit-card.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                                <span class="tituloCategoriaPanelAdmin">Mis datos</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" id="buttonSesion">
+                        <div class="media">
+                            <img src="./img/iconos/Icon_feather-log-in.png" class="align-self-center mr-3" alt="...">
+                            <div class="media-body">
+                                <span class="tituloCategoriaPanelAdmin">Cerrar sesión</span>
+                            </div>
+                          </div>
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <footer class="panelAdmin ">
+            <div class="fixed-bottom">
+                <span class="copyright">
+                    <p class="derechosReservados">© RePalanca 2021. Todos los derechos reservados.</p> 
+                    <p class="politicaPrivacidad"><a href="#"><u>Conoce nuestra Política de privacidad.</u> </a></p>
+                </span>
+            </div>
+        </footer>
+        
+    </aside>
+
+    <div class="container" id="navPrincipal">
+      <nav class="navDashboardPrincipal">
+          <div class="buscadorNav">
+              <div class="row">
+                  <div class="col-6">
+                      <div class="input-group mb-2">
+                          <input type="text" class="form-control" placeholder="Buscar" aria-describedby="basic-addon2" size="1">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><img src="./img/iconos/search.svg" alt=""></span>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-3"></div>
+                  <div class="col-3">
+                      <div class="notificacionYagregarProductosNav">
+                          <a href="#"><img src="./img/iconos/bell.svg" alt=""></a>
+                          <button type="button" class="btn btn-danger">+ Agregar producto</button>
+                      </div>
+                  </div>
+                </div>
+          </div>
+      </nav>
+  </div>
+
+    <main class="principal">
+        <div class="container">
+            <p class="tituloPublicar">Publicar producto</p>
+            <div class="row">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <input class="nombreCorto" type="text" name="" id="" placeholder="Nombre corto" size="35">
+                    <input class="nombreLargo" type="text" name="" id="" placeholder="Nombre largo" size="35">
+                    <form>
+                        <div class="form-row">
+                          <div class="col-6">
+                            <select class="categoria" name="" id="">
+                                <option disabled selected>Categoria</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                            </select>
+                          </div>
+                          <div class="col-6">
+                            <select class="subCategoria" id="">
+                                <option disabled selected>Subcategoria</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
+    
+                    <div class="arrastrarImagen">
+                        <img src="./img/iconos/upload-cloud.png" alt="" class="upload">
+                        <p class="primerParrafo">Arrastrar imagen Aquí</p>
+                        <p class="segundoParrafo">o sino</p>
+                        
+                        <button id="buscarEnElOrdernador" type="button" class="btn btn-danger">BUSCAR EN EL ORDENARO</button>
+                    </div>
+                    <p class="enunciadoImagen"><span>Como publicar buenas fotos:</span> para que tu producto genere impacto, lo mejor es que subas fotos cuadradas de 1000x1000 px (Excluyente) y de fondo blanco en lo posible</p>
+                  </div>
+                  <div class="col-md-4">
+                    <textarea name="" id="textarea" cols="33" rows="10" placeholder="Descripción"></textarea>
+                    <select class="presentacion" name="" id="">
+                        <option disabled selected>Presentacion opcional</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <form>
+                      <div class="inputs">
+                        <div class="row row-cols-2" id="rowInputs">
+                          <div class="col">
+                            <input class="maridajeInput" type="text" name="" id="" placeholder="Maridaje (opcional)">
+                          </div>
+                          <div class="col">
+                            <input class="elaboracionInput" type="text" name="" id="" placeholder="Mes/Año Elaboración">
+                          </div>
+                          <div class="col">
+                            <input class="cosechaInput" type="text" name="" id="" placeholder="Año cosecha (vinos)">
+                          </div>
+                          <div class="col">
+                            <input class="stockInput" type="text" name="" id="" placeholder="Stock actual">
+                          </div>
+                          <div class="col">
+                            <button type="button" class="btn btn-outline-danger btn-sm btn-block">GUARDAR</button>
+                          </div>
+                          <div class="col">
+                            <button type="button" class="btn btn-danger btn-sm btn-block">PUBLICAR</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</html>
