@@ -11,7 +11,7 @@ ul{
 	margin: 0;
 }
 .Cabecera{
-    background-color: #1C1F33;
+    background-color: #1c1f33;
     color: white;
     height:112px;
 }
@@ -67,6 +67,7 @@ ul{
 .repalancaLogoMobile{
     max-width: 190px;
     height: auto;
+    margin-right: 53px;
 }
 .repalancaLogoMenuMobile{
     margin-left:45%; 
