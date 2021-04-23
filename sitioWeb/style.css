@@ -1073,6 +1073,7 @@ ul.nav{
 
 .containerFooter .col{
     color: #fff;
+    transform: translateX(50px); /* eliminar para obtener alineacion por default */
 }
 #GrupoTarjetas .list-group-item:last-child{
     padding-right: 0px;
@@ -1123,6 +1124,7 @@ ul.nav{
     .informacion .col:last-child{
         display: block;
         text-align: center;
+        transform: translateX(2%);
     }
     .containerFooter .tituloSubrayado:after {
         left: 50%;
