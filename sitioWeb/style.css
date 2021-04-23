@@ -13,7 +13,8 @@ ul{
 .Cabecera{
     background-color: #1c1f33;
     color: white;
-    height:112px;
+    height:122px;
+    z-index: 9999;
 }
 #navCategoriasHeader{
     font-family: 'Montserrat', sans-serif;
@@ -21,7 +22,7 @@ ul{
 #navCategoriasHeader li{
     position: relative;
 }
-#navCategoriasHeader .nav-item .nav-link:after {
+/*#navCategoriasHeader .nav-item .nav-link:after {
     content: '';
     width: 0;
     height: 0;
@@ -31,7 +32,7 @@ ul{
     position: absolute;
     top: 11px;
     right: -13px;
-}
+} */
 .itemMenu {
     position: absolute;
     background-color: #1C1F33;
@@ -42,9 +43,9 @@ ul{
     width: 280px;
     left: 17px;
 }
-#navCategoriasHeader li.active .itemMenu{
+/*#navCategoriasHeader li.active .itemMenu{
     left:-126px;
-}
+}*/
 .itemMenuList li a{
     display: block;
     color: #ececec;
@@ -60,9 +61,9 @@ ul{
     overflow: hidden;
 }
 .repalancaLogo{
-    max-width: 190px;
+    max-width: 237px;
     /* margin-right: 45px; */
-    margin-top: 8px;
+    margin-top: px;
 }
 .repalancaLogoMobile{
     max-width: 190px;
@@ -239,7 +240,7 @@ button.lupa{
 }
 #primeraLineaHeader{
     padding-top: 19px;
-    padding-bottom: 19px;
+    padding-bottom: 10px;
     margin-bottom: 0px;   /* 10px predeterminado */  
 }
 div#mySidenav{
@@ -315,7 +316,7 @@ button#marcas{
 
 /* barra busqueda personalizada */
 .search {
-    margin-top: 5px;
+    margin-top: 10px;
     height: 35px;
     background-color: #fff;
     padding: 10px;
@@ -801,7 +802,7 @@ h5 {
     text-align: left;
   }
 h5.NuestrasTiendas {
-    margin-top: 30px;
+    margin-top: 15px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
   }
@@ -814,7 +815,7 @@ h5.destacado {
     position: relative;
     z-index: 1;
     font-family: 'Montserrat';
-    margin-top: 56px;
+    margin-top: 30px;
     margin-bottom: 36px;
 }
 h5.NuestrasTiendas {
@@ -1264,7 +1265,7 @@ ul.nav{
 @media (max-width: 450px) {
     h5.destacado{
         font-size: 15pt;
-        margin-top: 36px;
+        margin-top: 15px;
         margin-bottom: 26px;
     }
 }
