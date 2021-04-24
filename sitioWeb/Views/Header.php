@@ -43,7 +43,7 @@
        <div class="container" id="primeraLineaHeader">
           <div class="row text-center">    
             <div class="col-sm-4 order-1 order-sm-1">
-              <a href="./index.php"><img class="repalancaLogo" src="./img/iconos/Repalanca.png" alt="" srcset=""></a> 
+              <a href="./index.php"><img class="dolcelattoLogo" src="./img/iconos/dolcelatto.png" alt="" srcset=""></a> 
             </div>
             <div class="col-sm-5 order-1 order-sm-1">
                 <div class="search"> <input type="text" class="search-input" placeholder="Buscá por Producto, marca, categoria..." name=""> <a href="#" class="search-icon"> <img class="LupaBuscador" src="./img/iconos/Icon feather-search.png" alt=""></a> </div>
@@ -86,7 +86,7 @@
 <div id="mySidenav" class="sidenav">
 <div class="row">
     <div class="col-10">
-    <img src="./img/iconos/Repalanca_Icono_2.png" width="70px" height="70px" alt="" style="margin-left:40%">
+    <img src="./img/iconos/dolcelatto_Icono_2.png" width="70px" height="70px" alt="" style="margin-left:40%">
     </div>
     <div class="col-2">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -104,7 +104,7 @@
 
     </div>
     <div class="col-7" style="margin-top: 5px; float:left;">
-    <img src="./img/iconos/Repalanca.png" width="70%" height="70%" alt="">
+    <img src="./img/iconos/dolcelatto.png" width="70%" height="70%" alt="">
 
     </div>
     <div class="col-3" style="margin-top: 5px;">

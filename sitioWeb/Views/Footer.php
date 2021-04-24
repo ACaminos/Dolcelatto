@@ -58,7 +58,7 @@
                             <td class="priority-4">Privacidad</td>
                             <td class="priority-3">Espirituosa</td>
                             <td class="priority-5">Fuller's</td>
-                            <td class="priority-1">ventas@repalanca.com</td>
+                            <td class="priority-1">ventas@dolcelatto.com</td>
               </tr>
             </tbody>
     </table>
@@ -69,7 +69,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6" style="margin-top: 5px;">
-              <p class="derechosReservados">© RePalanca 2020 . Todos los derechos reservados. <a class="politica" href="#"> Conoce nuestra Política de privacidad</a>.</p>
+              <p class="derechosReservados">© dolcelatto 2020 . Todos los derechos reservados. <a class="politica" href="#"> Conoce nuestra Política de privacidad</a>.</p>
             </div>
             <div class="col-md-6">
               <img src="./img/iconos/tarjetas.png" alt="">
